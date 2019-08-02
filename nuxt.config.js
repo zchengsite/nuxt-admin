@@ -75,5 +75,12 @@ export default {
   server: {
     port: 3000, // default: 3000
     host: '0.0.0.0', // default: localhost,
-  }
+  },
 }
+
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/<repository-name>/'
+  }
+} : {}
