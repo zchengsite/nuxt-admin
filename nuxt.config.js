@@ -1,5 +1,13 @@
+// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
+const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
+  router: {
+    base: '/<repository-name>/'
+  }
+} : {}
 
 export default {
+  ...routerBase,
+
   mode: 'universal',
   /*
   ** Headers of the page
@@ -77,10 +85,3 @@ export default {
     host: '0.0.0.0', // default: localhost,
   },
 }
-
-// only add `router.base = '/<repository-name>/'` if `DEPLOY_ENV` is `GH_PAGES`
-const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
-    base: '/<repository-name>/'
-  }
-} : {}
