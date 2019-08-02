@@ -1,0 +1,117 @@
+#__nuxt {
+  height: 100%;
+}
+
+#__layout {
+  height: 100%;
+}
+
+#container {
+  height: 100%;
+}
+
+@media (min-width: 768px) {
+  .page {
+    padding-top: 44.1px;
+  }
+  .page-aside {
+    padding-top: 44.1px;
+  }
+}
+
+/*@media (max-width: 768px) {
+  .page {
+    padding-top: 66.1px;
+  }
+  .page-aside {
+    padding-top: 66.1px;
+  }
+}*/
+
+@media (max-width: 1199px) {
+  .page-main {
+    margin-left: 220px;
+  }
+}
+
+@media (min-width: 1199px) {
+  .page-main {
+    margin-left: 260px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-main {
+    margin-left: 0;
+  }
+}
+
+/*.page-header {
+  padding: 20px 20px 0 20px;
+}*/
+
+/*.page-content {
+  padding: 20px 20px 0 20px;
+}*/
+
+.panel {
+  margin-bottom: 20px;
+  overflow: auto;
+}
+
+/* 清除浮动 */
+.clear {
+  clear: both;
+}
+
+.panel-title {
+  padding: 15px 20px;
+}
+
+.panel-body {
+  padding: 5px 20px;
+  position: relative;
+}
+
+.card {
+  margin-bottom: 20px;
+}
+
+.table-custom th,
+.table-custom td {
+  max-width: 500px;
+  min-width: 80px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.form-material.floating {
+  margin: 0 !important;
+}
+
+.form-material .form-control {
+  background-size: 0 2px,100% 1px;
+  background-image: linear-gradient(#3e8ef7,#3e8ef7),linear-gradient(#CCD5DB,#CCD5DB);
+}
+
+.page-animation {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: 4;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translateY(-50%);
+  color: #f1f4f5 !important;
+}
+
+.el-select {
+  width: 100%;
+}
+
+.el-date-editor .el-range-separator {
+  line-height: 30px !important;
+  width: 10% !important;
+}
