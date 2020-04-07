@@ -59,7 +59,6 @@ export default {
 
   router: {
     middleware: ['locale-redirect'],
-    base: '/nuxt-admin/'
   },
   /*
   ** Build configuration
