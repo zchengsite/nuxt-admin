@@ -1,4 +1,4 @@
-# test
+# nuxt-admin
 
 > My astounding Nuxt.js project
 
